@@ -1,7 +1,7 @@
-import '../styles/hero-banner.css'
-import Button from './Button.jsx'
+import '../../styles/hero-banner.css'
+import Button from '../Button/Button.jsx'
 
-export default function Hero({ movie }) {
+export default function Hero({ movie, hasFilter, onClearFilter }) {
   if (!movie) return null
 
   return (
@@ -14,6 +14,7 @@ export default function Hero({ movie }) {
         <p className="featured-hero__meta">{movie.rating} ★ <span>·</span> {movie.classification} <span>·</span> {movie.duration}</p>
         <p className="featured-hero__synopsis">{movie.synopsis}</p>
         <Button as="a" variant="outline" className="featured-hero__button" href="#peliculas">Ver horarios <span aria-hidden="true">↗</span></Button>
+        <Button type="button" variant="outline" className="featured-hero__button featured-hero__clear" onClick={onClearFilter} disabled={!hasFilter}>Limpiar filtro</Button>
       </div>
       <span className="featured-hero__index">CINE AURORA <b>—</b> 01 / 08</span>
     </section>

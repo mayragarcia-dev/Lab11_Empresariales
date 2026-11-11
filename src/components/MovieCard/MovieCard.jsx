@@ -1,5 +1,5 @@
-import '../styles/movie-card.css'
-import Button from './Button.jsx'
+import '../../styles/movie-card.css'
+import Button from '../Button/Button.jsx'
 
 export default function MovieCard({ movie, isFavorite, onToggleFavorite }) {
   return (

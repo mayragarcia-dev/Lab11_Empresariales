@@ -1,12 +1,13 @@
-import '../styles/header.css'
+import '../../styles/header.css'
 
-export default function Header() {
+export default function Header({ favoriteCount }) {
   return (
     <header className="site-header">
       <a className="brand" href="#inicio" aria-label="Cine Aurora, inicio">
         <span className="brand-mark" aria-hidden="true">A</span>
         <span className="brand-name">CINE <strong>AURORA</strong></span>
       </a>
+      <p className="header-favorites" role="status" aria-live="polite">Favoritas: <strong>{favoriteCount}</strong></p>
       <nav className="main-nav" aria-label="Navegación principal">
         <a className="nav-link is-active" href="#peliculas">Cartelera</a>
         <a className="nav-link" href="#proximamente">Próximamente</a>

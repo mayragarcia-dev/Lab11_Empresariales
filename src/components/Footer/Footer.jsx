@@ -1,4 +1,6 @@
-import '../styles/footer.css'
+import '../../styles/footer.css'
+
+const currentYear = new Date().getFullYear()
 
 export default function Footer() {
   return (
@@ -21,7 +23,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="site-footer__bottom">
-        <span>© {new Date().getFullYear()} Cine Aurora. Todos los derechos reservados.</span>
+        <span>© {currentYear} Cine Aurora. Todos los derechos reservados.</span>
         <a href="#inicio">Volver arriba ↑</a>
       </div>
     </footer>

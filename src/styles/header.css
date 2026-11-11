@@ -11,3 +11,5 @@
 .header-cta:hover { background: var(--color-accent); color: var(--color-bg); }
 .header-cta span { font-size: 16px; }
 @media (max-width: 760px) { .site-header { height: 72px; } .brand { min-width: auto; } .main-nav { display: none; } .header-cta { min-width: 128px; padding: 11px 12px; } }
+.header-favorites { color: var(--color-accent); font-size: 13px; white-space: nowrap; margin: 0; }
+@media (max-width: 1100px) { .site-header { gap: 16px; flex-wrap: wrap; height: auto; min-height: 88px; padding-top: 16px; padding-bottom: 16px; } .main-nav { gap: 20px; } }

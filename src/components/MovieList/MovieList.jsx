@@ -1,7 +1,7 @@
-import MovieCard from './MovieCard.jsx'
-import MovieSearch from './MovieSearch.jsx'
-import '../styles/movie-list.css'
-import { useWindowSize } from '../hooks/useWindowSize.js'
+import MovieCard from '../MovieCard/MovieCard.jsx'
+import MovieSearch from '../MovieSearch/MovieSearch.jsx'
+import '../../styles/movie-list.css'
+import { useWindowSize } from '../../hooks/useWindowSize.js'
 
 export default function MovieList({ movies, favoriteIds, onToggleFavorite, searchTerm, onSearchChange }) {
   const { width } = useWindowSize()

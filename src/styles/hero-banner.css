@@ -13,3 +13,5 @@
 .featured-hero__index { position: absolute; z-index: 1; right: var(--page-gutter); bottom: 27px; color: #c6c0b5; font-size: 8px; letter-spacing: .17em; }
 .featured-hero__index b { margin: 0 7px; color: var(--color-accent); }
 @media (max-width: 650px) { .featured-hero { min-height: 650px; align-items: end; } .featured-hero__image { object-position: 60% center; } .featured-hero__shade { background: linear-gradient(0deg, rgba(17,16,14,.97), rgba(17,16,14,.55) 60%, rgba(17,16,14,.1)); } .featured-hero__content { width: 100%; padding: 55px 24px 84px; } .featured-hero h1 { font-size: clamp(52px, 14vw, 76px); } .featured-hero__index { right: 24px; bottom: 25px; } }
+.featured-hero__clear { margin: 12px 0 0 12px; }
+.featured-hero__clear:disabled { opacity: .45; cursor: default; }

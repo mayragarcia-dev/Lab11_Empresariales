@@ -1,4 +1,4 @@
-// Convierte la forma de los datos de origen al modelo que consume la interfaz.
+// Normalize source data into the movie model consumed by the UI.
 export function adaptMovie(source) {
   return {
     id: String(source.id ?? source.imdbID ?? source.title),
